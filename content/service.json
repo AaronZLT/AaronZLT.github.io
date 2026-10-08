@@ -1,0 +1,20 @@
+{
+  "reviewer": {
+    "conferences": "ICML (2025, 2026), NeurIPS (2025, 2026), AAAI (2026), ICLR (2025), IEEE INFOCOM (2025), ACL (2025)",
+    "journals": [
+      "IEEE Network",
+      "IEEE Transactions on Network Science and Engineering",
+      "IEEE Transactions on Neural Networks and Learning Systems"
+    ]
+  },
+  "teaching": [
+    {
+      "course": "DSAA5037 · Introduction to Graph Learning",
+      "term": "Spring 2025"
+    },
+    {
+      "course": "UCMP6010 · Module C",
+      "term": "Fall 2024"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "title": "Efficiency across the model lifecycle",
+  "introduction": "My guiding belief is that a useful model can succeed without leading every benchmark, but a business built around it needs sustainable costs. I focus on accelerating pre-training, post-training, and inference without sacrificing model performance, so that the same capability becomes cheaper to build and use.",
+  "areas": [
+    {
+      "label": "01 / PRE-TRAINING",
+      "title": "Train efficiently",
+      "description": "Distributed training, communication efficiency, and runtime performance analysis to make better use of available compute."
+    },
+    {
+      "label": "02 / POST-TRAINING",
+      "title": "Adapt efficiently",
+      "description": "Memory-efficient fine-tuning and agentic learning, including low-rank adaptation and post-training for long-horizon coding agents."
+    },
+    {
+      "label": "03 / INFERENCE",
+      "title": "Serve efficiently",
+      "description": "Quantization and efficient execution for large language models, mixture-of-experts models, and multi-model agents."
+    }
+  ],
+  "approach": {
+    "label": "Research approach",
+    "title": "Algorithm–system co-design",
+    "description": "I study learning algorithms together with the systems that execute them: numerical representations, memory use, communication, and hardware behavior. The aim is faster execution and lower cost at the same level of model performance."
+  },
+  "evidence": {
+    "title": "Why cost matters",
+    "subtitle": "The economics of staying in business · 2024–2026",
+    "overview": "Businesses need models that meet their quality requirements at a cost they can sustain. At high request volumes, even a small per-token price difference changes the monthly bill. My goal is to reduce that bill by accelerating the full model lifecycle while preserving model performance.",
+    "charts": [
+      {
+        "id": "luna-2026",
+        "date": "July 30, 2026",
+        "title": "Serving efficiency becomes cheaper access",
+        "takeaway": "GPT-5.6 Luna received an 80% API price cut after improvements to model-serving efficiency.",
+        "metrics": [
+          {
+            "label": "API price index · before = 100",
+            "direction": "Lower is better",
+            "format": "index",
+            "max": 100,
+            "rows": [
+              {
+                "label": "Before the July 30 cut",
+                "value": 100,
+                "tone": "reference"
+              },
+              {
+                "label": "After the July 30 cut",
+                "value": 20,
+                "tone": "efficient"
+              }
+            ]
+          }
+        ],
+        "highlight": "80% lower",
+        "highlight_label": "API prices for the same named model",
+        "note": "Announced rates after the cut: $0.20 input / $1.20 output per 1M tokens. OpenAI attributes the change to efficiency improvements across models, inference systems, and context management.",
+        "sources": [
+          {
+            "label": "OpenAI · July 2026 price update",
+            "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/"
+          }
+        ]
+      },
+      {
+        "id": "haiku-2026",
+        "date": "October 7, 2026",
+        "title": "A lower price expands the budget",
+        "takeaway": "Haiku 5.5 lowered input and output token prices by 90% for prompts up to 100k tokens.",
+        "metrics": [
+          {
+            "label": "API price index · Haiku 4.5 = 100",
+            "direction": "Lower is better",
+            "format": "index",
+            "max": 100,
+            "rows": [
+              {
+                "label": "Haiku 4.5 · Oct 2025",
+                "value": 100,
+                "tone": "reference"
+              },
+              {
+                "label": "Haiku 5.5 · Oct 2026",
+                "value": 10,
+                "tone": "efficient"
+              }
+            ]
+          }
+        ],
+        "note": "Standard input / output prices per 1M tokens: Haiku 4.5 $1.00 / $5.00; Haiku 5.5 $0.10 / $0.50. Haiku 5.5 also reported higher benchmark scores than its predecessor.",
+        "sources": [
+          {
+            "label": "Anthropic · 2026 results & pricing",
+            "url": "https://www.anthropic.com/claude-haiku-5-5"
+          }
+        ],
+        "highlight": "90% lower",
+        "highlight_label": "Input and output prices · prompts ≤100k tokens"
+      }
+    ],
+    "timeline": {
+      "title": "Service landscape · 2024–2026",
+      "years": [
+        {
+          "year": 2024,
+          "events": [
+            {
+              "date": "June 4",
+              "title": "Banana",
+              "status": "Startup work ended",
+              "tone": "closed",
+              "description": "The founder announced he had stopped work on Banana after the February 2024 announcement of its serverless product sunset.",
+              "sources": [
+                {
+                  "label": "Founder · product sunset",
+                  "url": "https://erikdunteman.com/blog/banana-pivot-unpeeled/"
+                },
+                {
+                  "label": "Shutdown",
+                  "url": "https://erikdunteman.com/blog/shutting-down-banana/"
+                }
+              ]
+            },
+            {
+              "date": "October 31",
+              "title": "OctoAI",
+              "status": "Commercial service ended",
+              "tone": "closed",
+              "description": "Commercial services were wound down following NVIDIA’s acquisition in September 2024.",
+              "sources": [
+                {
+                  "label": "GeekWire · acquisition & closure",
+                  "url": "https://www.geekwire.com/2024/chip-giant-nvidia-acquires-octoai-a-seattle-startup-that-helps-companies-run-ai-models/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year": 2025,
+          "events": [
+            {
+              "date": "October 15",
+              "title": "Anthropic · Haiku 4.5",
+              "status": "API launched",
+              "tone": "active",
+              "description": "A lower-priced model joined the API alongside the stronger Sonnet 4.5.",
+              "sources": [
+                {
+                  "label": "Anthropic · launch",
+                  "url": "https://www.anthropic.com/news/claude-haiku-4-5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "events": [
+            {
+              "date": "July 30",
+              "title": "OpenAI · GPT-5.6 Luna",
+              "status": "API price reduced",
+              "tone": "active",
+              "description": "Luna remained available with an 80% price reduction.",
+              "sources": [
+                {
+                  "label": "OpenAI · price update",
+                  "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/"
+                }
+              ]
+            },
+            {
+              "date": "October 7",
+              "title": "Anthropic · Haiku 5.5",
+              "status": "API launched",
+              "tone": "active",
+              "description": "A new, faster Haiku model launched with lower token prices and higher reported benchmark scores.",
+              "sources": [
+                {
+                  "label": "Anthropic · launch",
+                  "url": "https://www.anthropic.com/claude-haiku-5-5"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "limitations": {
+      "title": "Scope of the comparison",
+      "description": "Monthly bills are illustrative calculations at a fixed token volume, not measured production spending or a claim of equal capability. Rates exclude caching, batch discounts, and other business costs. Haiku 5.5 prices shown apply to prompts up to 100k tokens. The 2025 benchmarks used different thinking budgets. The closure cases do not measure survival probabilities or isolate price as the cause; OctoAI’s closure followed an acquisition."
+    },
+    "date_note": "Evidence window · 2024–2026. Sources checked October 8, 2026. Prices are USD at the stated announcement dates.",
+    "operating_costs": {
+      "id": "monthly-business-cost",
+      "date": "2025–2026 price snapshots",
+      "title": "What it costs to keep serving users",
+    "takeaway": "The same request volume can produce very different inference bills. Lower spending leaves more revenue to cover people, infrastructure, and continued operations.",
+      "requests_per_month": 1000000,
+      "input_tokens_per_request": 1000,
+      "output_tokens_per_request": 200,
+      "models": [
+        {
+          "label": "Sonnet 4.5 · Sep 2025",
+          "input_price": 3,
+          "output_price": 15,
+          "tone": "reference"
+        },
+        {
+          "label": "Haiku 4.5 · Oct 2025",
+          "input_price": 1,
+          "output_price": 5,
+          "tone": "reference"
+        },
+        {
+          "label": "GPT-5.6 Luna · Jul 2026",
+          "input_price": 0.2,
+          "output_price": 1.2,
+          "tone": "efficient"
+        },
+        {
+          "label": "Haiku 5.5 · Oct 2026",
+          "input_price": 0.1,
+          "output_price": 0.5,
+          "tone": "efficient"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Sonnet 4.5 · 2025",
+          "url": "https://www.anthropic.com/news/claude-sonnet-4-5"
+        },
+        {
+          "label": "Haiku 4.5 · 2025",
+          "url": "https://www.anthropic.com/news/claude-haiku-4-5"
+        },
+        {
+          "label": "GPT-5.6 Luna · 2026",
+          "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/"
+        },
+        {
+          "label": "Haiku 5.5 · 2026",
+          "url": "https://www.anthropic.com/claude-haiku-5-5"
+        }
+      ]
+    },
+    "performance_context": {
+      "title": "Performance is a requirement; cost is a business constraint",
+      "description": "Haiku 4.5 remained a lower-priced API option despite scoring below the frontier Sonnet 4.5 on the 2025 SWE-bench Verified report (73.3% vs. 77.2%). This supports choosing sufficient capability for a workload rather than paying for benchmark leadership on every request.",
+      "sources": [
+        {
+          "label": "Haiku 4.5 · 2025",
+          "url": "https://www.anthropic.com/news/claude-haiku-4-5"
+        },
+        {
+          "label": "Sonnet 4.5 · 2025",
+          "url": "https://www.anthropic.com/news/claude-sonnet-4-5"
+        }
+      ]
+    }
+  }
+}

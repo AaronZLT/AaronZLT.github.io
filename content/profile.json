@@ -1,0 +1,82 @@
+{
+  "name": "Longteng Zhang",
+  "initials": "LZ",
+  "position": "HKUST(GZ)",
+  "email": "lzhang330@connect.hkust-gz.edu.cn",
+  "tags": [
+    "Agentic Learning",
+    "Efficient Large Language Models"
+  ],
+  "page": {
+    "title": "Longteng Zhang | Academic Homepage",
+    "description": "Longteng Zhang, Ph.D. candidate at HKUST(GZ). Algorithm–system co-design for efficient large language model and agentic Learning.",
+    "language": "en"
+  },
+  "navigation": [
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Experience",
+      "href": "#experience"
+    },
+    {
+      "label": "Research",
+      "href": "#research"
+    },
+    {
+      "label": "Publications",
+      "href": "#publications"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "hero": {
+    "headline": [
+      {
+        "text": "Making large models "
+      },
+      {
+        "text": "faster,",
+        "emphasis": true
+      },
+      {
+        "text": " across their "
+      },
+      {
+        "text": "entire lifecycle.",
+        "emphasis": true
+      }
+    ],
+    "introduction": "I am Longteng Zhang, a final-year Ph.D. candidate at HKUST(GZ). I study efficient large language models and agentic learning for long-horizon agents.",
+    "scholar": {
+      "label": "Google Scholar",
+      "href": "https://scholar.google.com/citations?user=GWR7HawAAAAJ&hl=en"
+    },
+    "button": {
+      "label": "View publications",
+      "href": "#publications"
+    }
+  },
+  "bio": "I am interested in building efficient systems capable of reasoning and optimization in complex environments. My recent research focuses on efficient reinforcement learning with adaptive rewards, as well as accelerating multimodal inference through quantization and speculative decoding.",
+  "contact": {
+    "introduction": "For research collaboration or discussions please reach out by email.",
+    "linkedin": "https://www.linkedin.com/in/longteng-zhang-0714a2442/",
+    "wechat": {
+      "image": "assets/wechat.jpg",
+      "alt": "WeChat QR code for Longteng Zhang",
+      "caption": "Scan with WeChat to add me."
+    },
+    "affiliation": [
+      "Data Science and Analytics Thrust",
+      "HKUST(GZ) · Guangzhou, China"
+    ]
+  },
+  "footer": {
+    "year": 2026,
+    "last_updated": "Last updated · October 2026"
+  }
+}

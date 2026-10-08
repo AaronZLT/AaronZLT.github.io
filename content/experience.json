@@ -1,0 +1,53 @@
+{
+  "education": [
+    {
+      "date": "Sep 2023 – Present",
+      "organization": "HKUST (Guangzhou)",
+      "role": "Ph.D. Candidate · Data Science and Analytics",
+      "description": [
+        "Supervisors: ",
+        {
+          "text": "Prof. Xiaowen Chu",
+          "url": "https://sites.google.com/view/chuxiaowen/home"
+        },
+        " and ",
+        {
+          "text": "Prof. Qiong Luo",
+          "url": "https://cse.hkust.edu.hk/~luo/"
+        }
+      ]
+    },
+    {
+      "date": "Sep 2017 – Jun 2021",
+      "organization": "Jilin University",
+      "role": "B.S. · Computer Science and Technology",
+      "description": "Advisor: Prof. Hongliang Li"
+    }
+  ],
+  "experience": [
+    {
+      "date": "May 2026 – Present",
+      "organization": "Tencent · Youtu Lab",
+      "role": "Research Intern · Project Up Program",
+      "description": "Efficient post-training for long-horizon agents."
+    },
+    {
+      "date": "Sep 2022 – Sep 2023",
+      "organization": "HKUST (Guangzhou) · DSA Thrust",
+      "role": "Research Assistant",
+      "description": "Efficient LLM training and fine-tuning, runtime benchmarking, and performance analysis of NVIDIA's Hopper architecture."
+    },
+    {
+      "date": "Sep 2022 – Sep 2023",
+      "organization": "Hong Kong Baptist University",
+      "role": "Research Assistant · Department of Computer Science",
+      "description": "Efficient training and optimization of deep learning models."
+    },
+    {
+      "date": "May 2021 – Oct 2021",
+      "organization": "Samsung R&D Institute",
+      "role": "Researcher",
+      "description": "Mobile AI training and inference for Exynos 2200."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+[
+  {
+    "title": "Route-Consistent Adaptation for Stable Quantization of Mixture-of-Experts Models with Theoretical Guarantees",
+    "authors": [
+      "L. Zhang",
+      "S. Wu",
+      "Q. Wang",
+      "S. Shi",
+      "X. Chu"
+    ],
+    "author_position": 1,
+    "venue": "NeurIPS, 2026"
+  },
+  {
+    "title": "SALR: Sparsity-Aware Low-Rank Representation for Efficient Fine-Tuning of Large Language Models",
+    "authors": [
+      "L. Zhang",
+      "S. Wu",
+      "S. Hou",
+      "Z. Qing",
+      "Z. Zheng",
+      "D. Ke",
+      "Q. Lin",
+      "Q. Wang",
+      "S. Shi",
+      "X. Chu"
+    ],
+    "author_position": 1,
+    "venue": "AAAI, 2026"
+  },
+  {
+    "title": "Evaluation and Optimization of Gradient Compression for Distributed Deep Learning",
+    "authors": [
+      "L. Zhang",
+      "L. Zhang",
+      "S. Shi",
+      "X. Chu",
+      "B. Li"
+    ],
+    "author_position": 2,
+    "venue": "ICDCS, 2023"
+  },
+  {
+    "title": "FusionAI: Decentralized Training and Deploying LLMs with Massive Consumer-Level GPUs",
+    "authors": [
+      "Z. Tang",
+      "Y. Wang",
+      "X. He",
+      "L. Zhang",
+      "X. Pan",
+      "Q. Wang",
+      "R. Zeng",
+      "K. Zhao",
+      "S. Shi",
+      "B. He",
+      "X. Chu"
+    ],
+    "author_position": 4,
+    "venue": "IJCAI, 2023"
+  },
+  {
+    "title": "LoRA-FA: Memory-Efficient Low-Rank Adaptation for Large Language Model Fine-Tuning",
+    "authors": [
+      "L. Zhang",
+      "L. Zhang",
+      "S. Shi",
+      "X. Chu",
+      "B. Li"
+    ],
+    "author_position": 1,
+    "venue": "Preprint"
+  },
+  {
+    "title": "Dissecting the Runtime Performance of Training, Fine-Tuning, and Inference for Large Language Models",
+    "authors": [
+      "L. Zhang",
+      "X. Liu",
+      "Z. Li",
+      "X. Pan",
+      "P. Dong",
+      "R. Fan",
+      "R. Guo",
+      "X. Wang",
+      "Q. Luo",
+      "S. Shi",
+      "X. Chu"
+    ],
+    "author_position": 1,
+    "venue": "Preprint"
+  }
+]

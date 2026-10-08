@@ -1,0 +1,10 @@
+.DS_Store
+.sites-runtime/
+node_modules/
+__pycache__/
+.local/
+dist/
+.openai/
+ACTION.md
+*CV*.pdf
+*cv*.pdf

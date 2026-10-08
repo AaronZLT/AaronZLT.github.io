@@ -1,0 +1,154 @@
+@media (max-width: 900px) {
+  .hero {
+    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr) 280px;
+  }
+
+  h1 {
+    font-size: 3.3rem;
+  }
+
+  .two-column {
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .grid {
+    gap: .8rem;
+  }
+
+  .research-card {
+    padding: 1.2rem;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: .4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    padding: 1rem 1.25rem;
+    gap: .7rem;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 1.1rem;
+    flex-wrap: wrap;
+    font-size: .875rem;
+  }
+
+  main {
+    padding: 0 1.25rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 3rem 0;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    max-width: 520px;
+  }
+
+  .profile-card {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .research-card {
+    padding: 1.5rem;
+  }
+
+  .content-card, .co-design {
+    padding: 1.5rem;
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .wechat-qr {
+    left: -48px;
+    transform: none;
+    max-width: calc(100vw - 3rem);
+  }
+
+  .wechat-qr::after {
+    left: 64px;
+  }
+
+  .footer {
+    padding: 1.25rem;
+    gap: .8rem;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .publication h3 {
+    font-size: 1.25rem;
+  }
+
+  .cost-charts, .service-years {
+    grid-template-columns: 1fr;
+  }
+
+  .cost-chart {
+    padding: 1.1rem;
+  }
+
+  .evidence summary {
+    padding: 1rem 1.25rem;
+  }
+
+  .summary-note {
+    display: block;
+    margin: .3rem 0 0;
+  }
+
+  .evidence-body {
+    padding: 1.25rem;
+  }
+
+  .evidence-limitations {
+    padding: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
