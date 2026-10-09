@@ -276,6 +276,7 @@ def build():
     )
     (DIST / "assets").mkdir(parents=True, exist_ok=True)
     copy2(ROOT / profile["contact"]["wechat"]["image"], DIST / profile["contact"]["wechat"]["image"])
+    copy2(ROOT / "googledd3d6e39161b82df.html", DIST / "googledd3d6e39161b82df.html")
     (DIST / "index.html").write_text(html + "\n", encoding="utf-8")
     (DIST / "assets" / "style.css").write_text(styles, encoding="utf-8")
 
