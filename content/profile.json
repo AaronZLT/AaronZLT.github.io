@@ -51,7 +51,7 @@
         "emphasis": true
       }
     ],
-    "introduction": "I am Longteng Zhang, a final-year Ph.D. candidate at HKUST(GZ). I study efficient large language models and agentic learning for long-horizon agents.",
+    "introduction": "I am Longteng Zhang, a final-year Ph.D. candidate at HKUST(GZ). My research focuses on efficient large language models and agentic learning for long-horizon agents, leveraging a system-algorithm co-design approach.",
     "scholar": {
       "label": "Google Scholar",
       "href": "https://scholar.google.com/citations?user=GWR7HawAAAAJ&hl=en"
@@ -61,7 +61,7 @@
       "href": "#publications"
     }
   },
-  "bio": "I am interested in building efficient systems capable of reasoning and optimization in complex environments. My recent research focuses on efficient reinforcement learning with adaptive rewards, as well as accelerating multimodal inference through quantization and speculative decoding.",
+  "bio": "I am interested in building efficient systems capable of reasoning and optimization in complex environments. My recent research focuses on efficient reinforcement learning with adaptive rewards for LLM and MLLM.",
   "contact": {
     "introduction": "For research collaboration or discussions please reach out by email.",
     "linkedin": "https://www.linkedin.com/in/longteng-zhang-0714a2442/",
