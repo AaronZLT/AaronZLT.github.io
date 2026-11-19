@@ -4,38 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="$description">
-    <meta name="theme-color" content="$theme_color">
+    <meta name="author" content="$name">
+    <meta name="theme-color" content="#ffffff">
     <title>$title</title>
+    <link rel="canonical" href="$canonical_url">
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="$name">
     <meta property="og:title" content="$title">
-    <link rel="icon" type="image/svg+xml" href="$favicon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    >
+    <meta property="og:description" content="$description">
+    <meta property="og:url" content="$canonical_url">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="assets/style.css">
+    <script type="application/ld+json">
+$structured_data
+    </script>
   </head>
-  <body>
+  <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
 $header
-    <main id="main">
-$hero
-
+    <div class="page-layout">
+$sidebar
+      <main id="main">
 $about
+
+$publications
 
 $education
 
 $experience
 
-$research
-
-$publications
-
-$service
-
-$contact
-    </main>
+$services
+      </main>
+    </div>
 $footer
   </body>
 </html>

@@ -1,16 +1,9 @@
 :root {
-  --ink: #20231f;
-  --muted: #62655e;
-  --accent: #3f9877;
-  --accent-ink: #2e7257;
-  --line: rgba(32, 35, 31, .22);
-  --surface: #e9e6f3;
-  --white: #ffffff;
-  --background: #f7f7f2;
-  --focus: #9986df;
-  --tag-text: #20231f;
-  --header-background: rgba(247, 247, 242, .96);
-  --shadow-color: rgba(32, 35, 31, .055);
-  --serif: 'Source Serif 4', Georgia, serif;
-  --sans: Inter, Arial, sans-serif;
+  --ink: #3d4247;
+  --muted: #59636b;
+  --accent: #2b5685;
+  --line: #e9ecef;
+  --background: #ffffff;
+  --focus: #d67d21;
+  --sans: "Trebuchet MS", Helvetica, Arial, sans-serif;
 }

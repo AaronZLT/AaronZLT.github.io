@@ -1,9 +1,26 @@
-<section id="about" class="section two-column">
-  <div>
-    <p class="eyebrow">About</p>
-    <h2>Bio</h2>
+<section id="about" class="section about" aria-label="About me">
+$paragraphs
+  <p class="contact-prompt">$contact_text</p>
+  <div class="contact-links" role="group" aria-label="Contact and academic profiles">
+    <a class="contact-icon" href="mailto:$email" aria-label="Email" title="$email">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v.6l10 6.25L22 6.6V6a2 2 0 0 0-2-2ZM2 8.95V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.95l-9.47 5.92a1 1 0 0 1-1.06 0L2 8.95Z"/></svg>
+    </a>
+    <a class="contact-icon" href="$scholar_href" target="_blank" rel="me noopener" aria-label="Google Scholar" title="Google Scholar">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82ZM12 3 1 9l11 6 9-4.91V17h2V9L12 3Z"/></svg>
+    </a>
+    <button class="contact-icon wechat-trigger" type="button" popovertarget="wechat-qr" aria-label="WeChat" title="WeChat">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+        <ellipse cx="9" cy="9" rx="8" ry="6.4"/><path d="m4.1 13.9-1 3.6 4.1-2.4"/>
+        <circle cx="6.3" cy="7.5" r="1" fill="var(--background)"/><circle cx="11.7" cy="7.5" r="1" fill="var(--background)"/>
+        <ellipse cx="16" cy="15" rx="6.8" ry="5.5" stroke="var(--background)" stroke-width="1.2"/><path d="m19.5 18.9 1 3.2-3.6-2.2"/>
+        <circle cx="13.7" cy="13.8" r=".9" fill="var(--background)"/><circle cx="18.3" cy="13.8" r=".9" fill="var(--background)"/>
+      </svg>
+    </button>
+    <a class="contact-icon" href="$linkedin_href" target="_blank" rel="me noopener" aria-label="LinkedIn" title="LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM8 19H5V9h3v10ZM6.5 7.8a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6ZM19 19h-3v-5.2c0-1.4-.6-2-1.5-2S13 12.5 13 13.8V19h-3V9h3v1.3c.6-1 1.5-1.5 2.7-1.5 2 0 3.3 1.3 3.3 4V19Z"/></svg>
+    </a>
   </div>
-  <div class="content-card">
-    <p>$bio</p>
+  <div id="wechat-qr" class="wechat-popover" popover="auto" aria-label="WeChat QR code">
+    <img src="$wechat_image" alt="WeChat QR code" width="888" height="1191" loading="lazy">
   </div>
 </section>
