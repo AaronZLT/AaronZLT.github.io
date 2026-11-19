@@ -139,6 +139,7 @@ def build():
     for image_path in (profile["avatar"], contact["wechat_qr"], "assets/favicon.ico"):
         copy2(ROOT / image_path, DIST / image_path)
     copy2(ROOT / "googledd3d6e39161b82df.html", DIST / "googledd3d6e39161b82df.html")
+    copy2(ROOT / "BingSiteAuth.xml", DIST / "BingSiteAuth.xml")
     (DIST / "index.html").write_text(html + "\n", encoding="utf-8")
     (DIST / "assets" / "style.css").write_text(styles, encoding="utf-8")
     (DIST / "robots.txt").write_text(
