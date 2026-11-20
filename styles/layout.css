@@ -33,11 +33,6 @@
   align-items: start;
 }
 
-.profile {
-  position: sticky;
-  top: 6.6rem;
-}
-
 main {
   min-width: 0;
   max-width: 78ch;
