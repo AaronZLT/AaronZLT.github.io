@@ -33,6 +33,8 @@ python3 scripts/preview.py
 python3 scripts/build.py
 ```
 
+构建会按样式文件的最新修改时间，为 CSS 地址添加 `?v=版本号`。修改样式后，新版页面会请求新版 CSS。
+
 内容按页面区域分别维护：
 
 | 文件 | 展示内容 |

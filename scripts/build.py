@@ -97,10 +97,9 @@ def build():
             ), "    "),
         ),
     }
-    styles = "\n".join(
-        (ROOT / "styles" / f"{name}.css").read_text(encoding="utf-8")
-        for name in STYLE_FILES
-    )
+    style_paths = [ROOT / "styles" / f"{name}.css" for name in STYLE_FILES]
+    styles = "\n".join(path.read_text(encoding="utf-8") for path in style_paths)
+    style_version = max(path.stat().st_mtime_ns for path in style_paths)
     structured_data = {
         "@context": "https://schema.org",
         "@type": "ProfilePage",
@@ -129,6 +128,7 @@ def build():
         title=text(site["title"]),
         name=text(profile["name"]),
         canonical_url=text(site_url),
+        style_version=style_version,
         structured_data=json.dumps(structured_data, ensure_ascii=False, indent=2).replace("<", "\\u003c"),
         header=indent(template("header"), "    "),
         sidebar=indent(template("sidebar", **{key: text(value) for key, value in profile.items()}), "      "),
