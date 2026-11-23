@@ -129,6 +129,7 @@ def build():
         name=text(profile["name"]),
         canonical_url=text(site_url),
         style_version=style_version,
+        theme_script=indent((ROOT / "scripts" / "theme.js").read_text(encoding="utf-8").rstrip(), "      "),
         structured_data=json.dumps(structured_data, ensure_ascii=False, indent=2).replace("<", "\\u003c"),
         header=indent(template("header"), "    "),
         sidebar=indent(template("sidebar", **{key: text(value) for key, value in profile.items()}), "      "),

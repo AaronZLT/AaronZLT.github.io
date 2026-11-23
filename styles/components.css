@@ -38,6 +38,37 @@
   object-fit: cover;
 }
 
+.theme-switch {
+  display: flex;
+  justify-self: end;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--control-background);
+}
+
+.theme-switch button {
+  min-height: 32px;
+  padding: .25rem .5rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: .875rem;
+  cursor: pointer;
+}
+
+.theme-switch button:hover {
+  color: var(--accent-hover);
+}
+
+.theme-switch button[aria-pressed="true"] {
+  border-color: var(--line);
+  background: var(--background);
+  color: var(--accent);
+}
+
 .profile-position {
   margin: .6rem 0 1.2rem;
   font-size: 1rem;
@@ -76,8 +107,8 @@
 }
 
 .contact-icon:hover {
-  background: #edf2f6;
-  color: #173b64;
+  background: var(--hover);
+  color: var(--accent-hover);
 }
 
 .contact-icon svg {
@@ -120,7 +151,7 @@
 }
 
 .publication h3 {
-  color: #333c45;
+  color: var(--heading);
   font-size: 1.125rem;
   line-height: 1.5;
   margin-bottom: .25rem;

@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: #173b64;
+  color: var(--accent-hover);
 }
 
 a:focus-visible, button:focus-visible {

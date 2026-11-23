@@ -15,6 +15,7 @@ AaronZLT.github.io/
 ├── styles/              按用途拆分的 CSS
 ├── scripts/
 │   ├── build.py         静态构建
+│   ├── theme.js         浏览器主题切换
 │   └── preview.py       刷新时自动构建的本机预览
 └── dist/                静态页面输出
 ```

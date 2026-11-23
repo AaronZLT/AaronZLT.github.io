@@ -1,9 +1,28 @@
 :root {
+  color-scheme: light;
   --ink: #3d4247;
   --muted: #59636b;
   --accent: #2b5685;
+  --accent-hover: #173b64;
+  --heading: #333c45;
+  --hover: #edf2f6;
+  --control-background: #f3f5f7;
   --line: #e9ecef;
   --background: #ffffff;
   --focus: #d67d21;
   --sans: "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #e2e6ec;
+  --muted: #acb7c4;
+  --accent: #a0c8f0;
+  --accent-hover: #c6e0ff;
+  --heading: #f0f3f7;
+  --hover: #283543;
+  --control-background: #232c36;
+  --line: #353d48;
+  --background: #171c22;
+  --focus: #f0b766;
 }
