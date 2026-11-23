@@ -29,7 +29,7 @@ def text(value):
 def linked_text(value):
     return re.sub(
         r"\[([^\]]+)\]\((https?://[^\s)]+)\)",
-        r'<a href="\2">\1</a>',
+        r'<a href="\2" target="_blank" rel="noopener">\1</a>',
         text(value),
     )
 
